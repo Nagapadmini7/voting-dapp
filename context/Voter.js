@@ -4,7 +4,7 @@ import {ethers} from "ethers";
 import {create as ipfsHttpClient} from "ipfs-http-client";
 import { useRouter } from 'next/router';
 
-import {Voting} from 'Voting/contarcst'
+import {Voting} from 'Voting/contracts'
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0');
 const fetchContract =(signerOrProvide)=>
 new ethers.Contract(VotingAddress, VotingAddressABI, signerOrProvide);
